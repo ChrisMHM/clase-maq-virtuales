@@ -1,0 +1,11 @@
+¿Por qué un lenguaje de programación sólo puede utilizarse en algunos sistemas operativos y en otros no?
+Porque al compilar el código fuente, se generan archivos objeto que están "atados" a la arquitectura del procesador y las bibliotecas que maneja el SO y que se mandan a llamar durante la compilación. Cuando se genera un ejecutable, el archivo solo puede ser utilizado dentro del SO en el que se compiló.
+
+¿Qué tipo de máquina virtual soporta virtualBox?. 
+En general puede soportar SO Windows y Linux sin mucha configuración más allá de la necesaria. 
+
+¿Qué función cumple el hypervisor en la virtualización?
+Funciona como una capa de software para la virtualización del hardware.
+
+Si tengo más de una máquina virtual instalada, y una se rompe, ¿esto afecta a las demás? ¿por qué?
+No, ya que cada una funciona dentro de su propio entorno aislado con su propia asignación de recursos que no permite interactuar a las MV a nivel de hardware. Si el SO host falla entonces sí fallarán todas.
